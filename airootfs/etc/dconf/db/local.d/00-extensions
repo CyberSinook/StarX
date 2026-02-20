@@ -1,0 +1,2 @@
+[org/gnome/shell]
+enabled-extensions=['blur-my-shell@aunetx','compiz-alike-magic-lamp-effect@hermes83.github.com','compiz-windows-effect@hermes83.github.com','CoverflowAltTab@palatis.blogspot.com','dash2dock-lite@icedman.github.com','space-bar@mluchrioh','user-theme@gnome-shell-extensions.gcampax.github.com','Vitals@CoreCoding.com','caffeine@patapon.info']
