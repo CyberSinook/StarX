@@ -4,8 +4,10 @@ set -e
 systemctl enable gdm
 systemctl enable NetworkManager
 
-useradd -m -G wheel,audio,video,storage -s /bin/bash live
-passwd -d live
+if ! id "live" &>/dev/null; then
+    useradd -m -G wheel,audio,video,storage -s /bin/bash live
+    passwd -d live
+fi
 
 echo "live ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/live
 chmod 440 /etc/sudoers.d/live
